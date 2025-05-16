@@ -1,11 +1,88 @@
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    font-family: Roboto,sans-serif;
+    margin: 50px 0;
+    font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+}
 
-*/
+.container {
+    width: 800px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 5rem;
+    color: indianred;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+                0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+input {
+    border: 1px solid grey;
+    width: 100%;
+    padding: 15px 40px;
+    color: #4e4e4e;
+}
+
+ul li {
+    border: 1px solid grey;
+    border-top: 0;
+    list-style: none;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #4e4e4e;
+}
+
+input:focus {
+    outline: none;
+}
+
+i {
+    border: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+    color: indianred;
+}   
+
+li:hover i {
+    opacity: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.task-count {
+    color: grey;
+    font-size: 1rem;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: indianred;
+    color: white;
+    padding: 8px 16px;
+    font-family: 'Montserrat', sans-serif;
+}
